@@ -1,0 +1,270 @@
+Last login: Wed Nov 10 21:32:31 on ttys000
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % cd Documents                          
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % cd Trybe
+rodrigodecastro@Rodrigos-MacBook-Pro Trybe % ls
+Aula1
+rodrigodecastro@Rodrigos-MacBook-Pro Trybe % cd Aula1
+rodrigodecastro@Rodrigos-MacBook-Pro Aula1 % ls
+Exercício 1.txt		unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro Aula1 % cd unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls
+backup		countries.txt	phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep -iv 'fox' countries.txt
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+Antigua & Deps
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bhutan
+Bolivia
+Bosnia Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Central African Rep
+Chad
+Chile
+China
+Colombia
+Comoros
+Congo
+Congo {Democratic Rep}
+Costa Rica
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Fiji
+Finland
+France
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Greece
+Grenada
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Honduras
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland {Republic}
+Israel
+Italy
+Ivory Coast
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea North
+Korea South
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar, {Burma}
+Namibia
+Nauru
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Norway
+Oman
+Pakistan
+Palau
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Qatar
+Romania
+Russian Federation
+Rwanda
+St Kitts & Nevis
+St Lucia
+Saint Vincent & the Grenadines
+Samoa
+San Marino
+Sao Tome & Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tonga
+Trinidad & Tobago
+Tunisia
+Turkey
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Yemen
+Zambia
+Zimbabwe
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep -iv 'fox' phrases.txt
+Cruzeiro maior de Minas.
+Floripa Ilha da Magia.
+Dingo vai virar dev.
+Trybe melhor escola.
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep -iv 'fdf' phrases.txt
+Cruzeiro maior de Minas.
+Floripa Ilha da Magia.
+Dingo vai virar dev.
+Trybe melhor escola.
+Fox é um baita carro.
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -w phrases.txt
+      20 phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -l phrases.txt
+       4 phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -l phrases.txt
+       4 phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -l phrases.txt
+       3 phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc phrases.txt
+       3      16      83 phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % touch empty.tbt empty.pdf
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls 
+backup		countries.txt	empty.pdf	empty.tbt	phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls *txt
+countries.txt	phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls *
+countries.txt	empty.pdf	empty.tbt	phrases.txt
+
+backup:
+trybe_backup.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls *txt *tbt
+countries.txt	empty.tbt	phrases.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % man ls\
+> q
+No manual entry for lsq
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % man ls
+
+     -f      Output is not sorted.  This option turns on the -a option.
+
+     -G      Enable colorized output.  This option is equivalent to defining
+             CLICOLOR in the environment.  (See below.)
+
+     -g      This option is only available for compatibility with POSIX; it is
+             used to display the group name in the long (-l) format output
+             (the owner name is suppressed).
+
+     -H      Symbolic links on the command line are followed.  This option is
+             assumed if none of the -F, -d, or -l options are specified.
+
+     -h      When used with the -l option, use unit suffixes: Byte, Kilobyte,
+             Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the
+             number of digits to three or less using base 2 for sizes.
+
+     -i      For each file, print the file's file serial number (inode num-
+             ber).
+
+     -k      If the -s option is specified, print the file size allocation in
+             kilobytes, not blocks.  This option overrides the environment
+             variable BLOCKSIZE.
+
+:

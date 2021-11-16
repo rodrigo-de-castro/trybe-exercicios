@@ -1,0 +1,32 @@
+ls - mostra o que está naquele diretório
+mkdir - cria um novo diretório
+cd - muda para o diretório informado
+pwd - mostra o caminho até o diretório atual
+cp - copia o arquivo
+mv - move/renomeia o arquivo
+rm - remove o arquivo
+rmdir - remove o diretório
+rm -rf - remove o diretório mesmo que não esteja vazio 
+clear - limpa a tela
+cat - mostra o arquivo/ insere algo no arquivo
+less - abre o arquivo paginado
+head - mostra as primeiras linhas de um arquivo (default: 10)
+tail - mostra as últimas linhas de um arquivo
+grep - faz uma busca no arquivo das linhas que contém uma expressão
+wc - conta quantas linhas, palavras e bytes tem em um arquivo
+> - para adicionarmos informações a um arquivo sobrepondo o que já havia
+>> - para adicionarmos informações a um arquivo mantendo o que já havia
+| - para agregar diferentes comandos
+sort - para ordenar
+who - para verificar usuários logados
+man - manual dos comandos
+whatis - explicação dos comandos
+apropos - corresponde a comandos com palavras-chave
+* - para definir uma expressão a ser buscada
+? - para buscar uma expressão a ser buscada
+chmod - alterar permissões em um arquivo
+ps - verificar os processos atuais
+bg - colocar processo em background
+kill - finalizar processo
+find - buscar arquivo com determinado nome
+history - histórico dos últimos comandos utilizados

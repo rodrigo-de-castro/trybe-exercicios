@@ -1,0 +1,573 @@
+Last login: Thu Nov 11 18:20:31 on ttys000
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % cd Documents
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % ls
+trybe-exercicios
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % cd trybe-exercicios 
+rodrigodecastro@Rodrigos-MacBook-Pro trybe-exercicios % ls
+fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro trybe-exercicios % cd fundamentos 
+rodrigodecastro@Rodrigos-MacBook-Pro fundamentos % ls
+bloco-1
+rodrigodecastro@Rodrigos-MacBook-Pro fundamentos % cd bloco-1 
+rodrigodecastro@Rodrigos-MacBook-Pro bloco-1 % ls
+aula-1	aula-2
+rodrigodecastro@Rodrigos-MacBook-Pro bloco-1 % cd aula-1
+rodrigodecastro@Rodrigos-MacBook-Pro aula-1 % ls
+Exercício 1.txt		Exercício 2.txt		unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro aula-1 % cd unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat > skills.txt
+Internet
+Unix
+Bash
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat >> skills.txt
+Git 
+JS
+Html
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat skills.txt
+Internet
+Unix
+Bash
+Git
+JS
+Html
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort skills2.txt
+sort: No such file or directory
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mv skills.txt skills2.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort skills2.txt
+Bash
+Css
+Fundamentos
+Git
+Html
+Internet
+JS
+Unix
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat skills2.txt
+Internet
+Unix
+Bash
+Git
+JS
+Html
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -l skills2.txt
+       8 skills2.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort |  head -3 skills2.txt
+Internet
+Unix
+Bash
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % head -3 | sort skills2.txt
+Bash
+Css
+Fundamentos
+Git
+Html
+Internet
+JS
+Unix
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort skills2.txt | head -3
+Bash
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat skills2.txt
+Internet
+Unix
+Bash
+Git
+JS
+Html
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort skills2.txt | head - 3 < cat > top_skills.txt
+zsh: no such file or directory: cat
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat skills2.txt
+Internet
+Unix
+Bash
+Git
+JS
+Html
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort skills2.txt | head -3 > top_skills.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat top_skills.txt
+Bash
+Css
+Fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat > phrases2.txt
+O Brasil é o melhor país
+A Trybe é a melhor escola
+Estou adorando programar 
+O céu é o limite
+O braço direito é mais forte que o esquerdo
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat phrases2.txt
+O Brasil é o melhor país
+A Trybe é a melhor escola
+Estou adorando programar
+O céu é o limite
+O braço direito é mais forte que o esquerdo
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc l-*br* phrases2.txt
+zsh: no matches found: l-*br*
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc l phrases2.txt
+wc: l: open: No such file or directory
+       5      29     144 phrases2.txt
+       5      29     144 total
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -l*br* phrases2.txt
+zsh: no matches found: -l*br*
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % wc -l *br* phrases2.txt
+zsh: no matches found: *br*
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep "br" phrases2.txt
+O braço direito é mais forte que o esquerdo
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep -i "br" phrases2.txt
+O Brasil é o melhor país
+O braço direito é mais forte que o esquerdo
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep -i "br" phrases2.txt | wc -l
+       2
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % grep -iv "br" phrases2.txt | wc -l
+       3
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat >> phrases2.txt
+cruzeiro
+cabuloso
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat phrases2.txt
+O Brasil é o melhor país
+A Trybe é a melhor escola
+Estou adorando programar
+O céu é o limite
+O braço direito é mais forte que o esquerdo
+cruzeiro
+cabuloso
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat > phrases2.txt
+O Brasil é o melhor país
+A Trybe é a melhor escola
+Estou adorando programar
+O céu é o limite
+O braço direito é mais forte que o esquerdo
+Espanha
+Itália
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat phrases2.txt 
+O Brasil é o melhor país
+A Trybe é a melhor escola
+Estou adorando programar
+O céu é o limite
+O braço direito é mais forte que o esquerdo
+Espanha
+Itália
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat phrases2.txt countries.txt > bunch_of_things.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cat bunch_of_things.txt 
+O Brasil é o melhor país
+A Trybe é a melhor escola
+Estou adorando programar
+O céu é o limite
+O braço direito é mais forte que o esquerdo
+Espanha
+Itália
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+Antigua & Deps
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bhutan
+Bolivia
+Bosnia Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Central African Rep
+Chad
+Chile
+China
+Colombia
+Comoros
+Congo
+Congo {Democratic Rep}
+Costa Rica
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Fiji
+Finland
+France
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Greece
+Grenada
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Honduras
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland {Republic}
+Israel
+Italy
+Ivory Coast
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea North
+Korea South
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar, {Burma}
+Namibia
+Nauru
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Norway
+Oman
+Pakistan
+Palau
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Qatar
+Romania
+Russian Federation
+Rwanda
+St Kitts & Nevis
+St Lucia
+Saint Vincent & the Grenadines
+Samoa
+San Marino
+Sao Tome & Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tonga
+Trinidad & Tobago
+Tunisia
+Turkey
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Yemen
+Zambia
+Zimbabwe%                                                                                                      rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % clear
+
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % sort bunch_of_things.txt 
+A Trybe é a melhor escola
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+Antigua & Deps
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bhutan
+Bolivia
+Bosnia Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Central African Rep
+Chad
+Chile
+China
+Colombia
+Comoros
+Congo
+Congo {Democratic Rep}
+Costa Rica
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Espanha
+Estonia
+Estou adorando programar
+Ethiopia
+Fiji
+Finland
+France
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Greece
+Grenada
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Honduras
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland {Republic}
+Israel
+Italy
+Itália
+Ivory Coast
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea North
+Korea South
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar, {Burma}
+Namibia
+Nauru
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Norway
+O Brasil é o melhor país
+O braço direito é mais forte que o esquerdo
+O céu é o limite
+Oman
+Pakistan
+Palau
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Qatar
+Romania
+Russian Federation
+Rwanda
+Saint Vincent & the Grenadines
+Samoa
+San Marino
+Sao Tome & Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Sudan
+Spain
+Sri Lanka
+St Kitts & Nevis
+St Lucia
+Sudan
+Suriname
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tonga
+Trinidad & Tobago
+Tunisia
+Turkey
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Yemen
+Zambia
+Zimbabwe
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests %

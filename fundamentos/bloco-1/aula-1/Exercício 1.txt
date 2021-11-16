@@ -1,0 +1,46 @@
+Last login: Wed Nov 10 17:33:44 on ttys000
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % ls
+Applications			Movies
+Desktop				Music
+Documents			Pictures
+Downloads			Public
+Library				for (var i = 1; i<=5; i++){.js
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % cd Documents
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % mkdir Trybe
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % cd Trybe
+rodrigodecastro@Rodrigos-MacBook-Pro Trybe % mkdir Aula1
+rodrigodecastro@Rodrigos-MacBook-Pro Trybe % cd Aula1
+rodrigodecastro@Rodrigos-MacBook-Pro Aula1 % mkdir unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro Aula1 % cd unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % touch trybe.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls 
+trybe.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % cp trybe.txt trybe_backup.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls
+trybe.txt		trybe_backup.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mv trybe.txt trybe1.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls
+trybe1.txt		trybe_backup.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mkdir backup
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mv trybe_backup.txt backup/ 
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mkdir backup2
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mv backup/trybe_backup.txt backup2/ 
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % rmdir backup
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % mv backup2 backup
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % pwd
+/Users/rodrigodecastro/Documents/Trybe/Aula1/unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % clear
+
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % head -5 skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % tail -4 skills.txt
+CSS
+JavaScript
+React
+SQL%                                                                            rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % rm *.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests %

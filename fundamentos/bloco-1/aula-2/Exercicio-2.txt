@@ -1,0 +1,66 @@
+Last login: Thu Nov 11 18:58:04 on ttys000
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+rodrigodecastro@Rodrigos-MacBook-Pro ~ % cd Documents 
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % ls
+trybe-exercicios
+rodrigodecastro@Rodrigos-MacBook-Pro Documents % cd trybe-exercicios 
+rodrigodecastro@Rodrigos-MacBook-Pro trybe-exercicios % ls
+fundamentos
+rodrigodecastro@Rodrigos-MacBook-Pro trybe-exercicios % cd fundamentos 
+rodrigodecastro@Rodrigos-MacBook-Pro fundamentos % cd bloco-1 
+rodrigodecastro@Rodrigos-MacBook-Pro bloco-1 % ls
+aula-1	aula-2
+rodrigodecastro@Rodrigos-MacBook-Pro bloco-1 % cd aula-1 
+rodrigodecastro@Rodrigos-MacBook-Pro aula-1 % ls
+Exercício 1.txt		Exercício 2.txt		unix_tests
+rodrigodecastro@Rodrigos-MacBook-Pro aula-1 % cd unix_tests 
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls -l
+total 48
+drwxr-xr-x  4 rodrigodecastro  staff   128 Nov 10 18:44 backup
+-rw-r--r--  1 rodrigodecastro  staff  2002 Nov 11 20:09 bunch_of_things.txt
+-rw-r--r--  1 rodrigodecastro  staff  1842 Nov 10 21:33 countries.txt
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.pdf
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.tbt
+-rw-r--r--@ 1 rodrigodecastro  staff    83 Nov 10 22:03 phrases.txt
+-rw-r--r--  1 rodrigodecastro  staff   160 Nov 11 20:07 phrases2.txt
+-rw-r--r--@ 1 rodrigodecastro  staff    47 Nov 11 19:03 skills2.txt
+-rw-r--r--  1 rodrigodecastro  staff    21 Nov 11 19:18 top_skills.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % chmod a+rw bunch_of_things.txt 
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls -l
+total 48
+drwxr-xr-x  4 rodrigodecastro  staff   128 Nov 10 18:44 backup
+-rw-rw-rw-  1 rodrigodecastro  staff  2002 Nov 11 20:09 bunch_of_things.txt
+-rw-r--r--  1 rodrigodecastro  staff  1842 Nov 10 21:33 countries.txt
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.pdf
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.tbt
+-rw-r--r--@ 1 rodrigodecastro  staff    83 Nov 10 22:03 phrases.txt
+-rw-r--r--  1 rodrigodecastro  staff   160 Nov 11 20:07 phrases2.txt
+-rw-r--r--@ 1 rodrigodecastro  staff    47 Nov 11 19:03 skills2.txt
+-rw-r--r--  1 rodrigodecastro  staff    21 Nov 11 19:18 top_skills.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % chmod a-w bunch_of_things.txt 
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls -l
+total 48
+drwxr-xr-x  4 rodrigodecastro  staff   128 Nov 10 18:44 backup
+-r--r--r--  1 rodrigodecastro  staff  2002 Nov 11 20:09 bunch_of_things.txt
+-rw-r--r--  1 rodrigodecastro  staff  1842 Nov 10 21:33 countries.txt
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.pdf
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.tbt
+-rw-r--r--@ 1 rodrigodecastro  staff    83 Nov 10 22:03 phrases.txt
+-rw-r--r--  1 rodrigodecastro  staff   160 Nov 11 20:07 phrases2.txt
+-rw-r--r--@ 1 rodrigodecastro  staff    47 Nov 11 19:03 skills2.txt
+-rw-r--r--  1 rodrigodecastro  staff    21 Nov 11 19:18 top_skills.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % chmod 644 bunch_of_things.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % ls -l
+total 48
+drwxr-xr-x  4 rodrigodecastro  staff   128 Nov 10 18:44 backup
+-rw-r--r--  1 rodrigodecastro  staff  2002 Nov 11 20:09 bunch_of_things.txt
+-rw-r--r--  1 rodrigodecastro  staff  1842 Nov 10 21:33 countries.txt
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.pdf
+-rw-r--r--  1 rodrigodecastro  staff     0 Nov 10 22:05 empty.tbt
+-rw-r--r--@ 1 rodrigodecastro  staff    83 Nov 10 22:03 phrases.txt
+-rw-r--r--  1 rodrigodecastro  staff   160 Nov 11 20:07 phrases2.txt
+-rw-r--r--@ 1 rodrigodecastro  staff    47 Nov 11 19:03 skills2.txt
+-rw-r--r--  1 rodrigodecastro  staff    21 Nov 11 19:18 top_skills.txt
+rodrigodecastro@Rodrigos-MacBook-Pro unix_tests % 
