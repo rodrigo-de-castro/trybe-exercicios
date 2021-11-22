@@ -1,0 +1,39 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 50px;
+    text-decoration: rebeccapurple;
+}
+
+body {
+    font-size: 12px;
+    font-style: italic;
+}
+
+ul {
+    text-align: center;
+    text-decoration: powderblue;
+    background-color: palegreen;
+}
+
+.coelho {
+    background-color: slateblue;
+}
+
+#amarelo {
+    background-color: yellow;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#marrom {
+    background-color: brown;
+}
