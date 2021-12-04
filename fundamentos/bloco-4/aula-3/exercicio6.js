@@ -12,3 +12,4 @@ if (divisores.length <= 2) {
 } else {
     console.log ("O número " + numeroTestado + " não é primo")
 }
+

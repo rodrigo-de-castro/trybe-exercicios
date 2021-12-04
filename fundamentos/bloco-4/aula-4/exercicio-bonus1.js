@@ -22,12 +22,12 @@ for (let index = 0; index < letters.length; index+=1){
 
 for (let index3 = 1; index3 < numbers.length; index3+=1){
     if (numbers[index3]>numbers[index3 -1]){
-        sum = sum - numbers[index3 -1] 
+        sum = sum + (numbers[index3] 
     } else {
-        sum = sum + numbers[index3 -1] 
+        sum = sum - numbers[index3 -1]) 
     }
 }
-return numbers
+return sum
 }
 
 console.log (romans('IVXLCDM'))
