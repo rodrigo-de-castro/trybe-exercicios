@@ -20,15 +20,21 @@ for (let index = 0; index < letters.length; index+=1){
     } 
 }
 
-for (let index3 = 1; index3 < numbers.length; index3+=1){
-    if (numbers[index3]>numbers[index3 -1]){
-        sum = sum - numbers[index3 -1] 
+for (let index3 = 0; index3 < numbers.length; index3+=1){
+    if (index3 === numbers.length - 1){
+        sum += numbers[index3]
+        break;
+    }
+
+    if (numbers[index3]>=numbers[index3 +1]){
+        sum = sum + numbers[index3] 
     } else {
-        sum = sum + numbers[index3 -1] 
+        sum = sum + numbers[index3 + 1] - numbers[index3];
+        index3 += 1 
     }
 }
-return numbers
+return sum
 }
 
-console.log (romans('IVXLCDM'))
+console.log (romans('CX'))
 
