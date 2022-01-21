@@ -63,15 +63,9 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  /*function fantasyOrScienceFiction(objeto) {
-    // escreva seu código aqui 
-    return objeto.filter((elemento) => (elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica'));
-  }
-  console.log (fantasyOrScienceFiction(books));*/
-
-  function fantasyOrScienceFiction(objeto) {
+  function oldBooksOrdered() {
     // escreva seu código aqui
-    const genreVerify = (elemento) => (elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica');  
-    return objeto.filter(genreVerify); 
+    return books.filter((element) => (2022 - element.releaseYear >= 60)).sort((a, b) => a.releaseYear - b.releaseYear)
   }
-  console.log (fantasyOrScienceFiction(books));
+
+  console.log(oldBooksOrdered())

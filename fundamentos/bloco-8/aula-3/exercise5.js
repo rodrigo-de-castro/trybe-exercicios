@@ -63,15 +63,9 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  /*function fantasyOrScienceFiction(objeto) {
-    // escreva seu código aqui 
-    return objeto.filter((elemento) => (elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica'));
-  }
-  console.log (fantasyOrScienceFiction(books));*/
-
-  function fantasyOrScienceFiction(objeto) {
+  function fantasyOrScienceFictionAuthors() {
     // escreva seu código aqui
-    const genreVerify = (elemento) => (elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica');  
-    return objeto.filter(genreVerify); 
-  }
-  console.log (fantasyOrScienceFiction(books));
+    return books.filter((element) => (element.genre === "Ficção Científica" || element.genre === "Fantasia")).map((element) => (element.author.name)).sort()
+}
+
+  console.log(fantasyOrScienceFictionAuthors())

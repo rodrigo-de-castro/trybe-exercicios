@@ -60,18 +60,12 @@ const books = [
       releaseYear: 1928,
     },
   ];
+
   
-  // Adicione o código do exercício aqui:
 
-  /*function fantasyOrScienceFiction(objeto) {
-    // escreva seu código aqui 
-    return objeto.filter((elemento) => (elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica'));
-  }
-  console.log (fantasyOrScienceFiction(books));*/
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  return books.filter((element) => (element.author.name[1] === "." && element.author.name[4] === "." && element.author.name[7] === ".")).map((element) => element.name)[0]
+}
 
-  function fantasyOrScienceFiction(objeto) {
-    // escreva seu código aqui
-    const genreVerify = (elemento) => (elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica');  
-    return objeto.filter(genreVerify); 
-  }
-  console.log (fantasyOrScienceFiction(books));
+console.log (authorWith3DotsOnName())
